@@ -1,0 +1,665 @@
+Symbol range map extraction starting
+Processing 4 files
+processing com\westclient\WestClientMod.java
+@|com\westclient\WestClientMod.java|8|22|com.westclient|package|com.westclient|(file)
+Class Start: com.westclient.WestClientMod
+   @|com\westclient\WestClientMod.java|603|609|String|class|java.lang.String
+   @|com\westclient\WestClientMod.java|610|616|MOD_ID|field|com.westclient.WestClientMod|MOD_ID|
+   @|com\westclient\WestClientMod.java|657|663|String|class|java.lang.String
+   @|com\westclient\WestClientMod.java|664|668|NAME|field|com.westclient.WestClientMod|NAME|
+   @|com\westclient\WestClientMod.java|709|715|String|class|java.lang.String
+   @|com\westclient\WestClientMod.java|716|723|VERSION|field|com.westclient.WestClientMod|VERSION|
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\westclient\WestClientMod.java|768|772|init|method|com.westclient.WestClientMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\westclient\WestClientMod.java|773|795|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\westclient\WestClientMod.java|796|801|event|param|com.westclient.WestClientMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\westclient\WestClientMod.java|817|833|FMLCommonHandler|class|net.minecraftforge.fml.common.FMLCommonHandler
+      @|com\westclient\WestClientMod.java|834|842|instance|method|net.minecraftforge.fml.common.FMLCommonHandler|instance|()Lnet/minecraftforge/fml/common/FMLCommonHandler;
+      @|com\westclient\WestClientMod.java|845|852|getSide|method|net.minecraftforge.fml.common.FMLCommonHandler|getSide|()Lnet/minecraftforge/fml/relauncher/Side;
+      @|com\westclient\WestClientMod.java|858|862|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\westclient\WestClientMod.java|863|869|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\westclient\WestClientMod.java|885|895|GuiHandler|class|com.westclient.setup.GuiHandler
+      @|com\westclient\WestClientMod.java|896|904|register|method|com.westclient.setup.GuiHandler|register|()V
+      @|com\westclient\WestClientMod.java|920|940|ClientCommandHandler|class|net.minecraftforge.client.ClientCommandHandler
+      @|com\westclient\WestClientMod.java|941|949|instance|field|net.minecraftforge.client.ClientCommandHandler|instance
+      @|com\westclient\WestClientMod.java|950|965|registerCommand|method|net.minecraft.command.CommandHandler|registerCommand|(Lnet/minecraft/command/ICommand;)Lnet/minecraft/command/ICommand;
+      @|com\westclient\WestClientMod.java|970|982|SetupCommand|class|com.westclient.setup.SetupCommand
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+Class End  : com.westclient.WestClientMod
+endProcessing com\westclient\WestClientMod.java
+
+processing com\westclient\setup\GuiHandler.java
+@|com\westclient\setup\GuiHandler.java|8|28|com.westclient.setup|package|com.westclient.setup|(file)
+Class Start: com.westclient.setup.GuiHandler
+   @|com\westclient\setup\GuiHandler.java|465|478|shouldOpenGui|field|com.westclient.setup.GuiHandler|shouldOpenGui|
+   Method Start: scheduleGuiOpen()V
+      @|com\westclient\setup\GuiHandler.java|512|527|scheduleGuiOpen|method|com.westclient.setup.GuiHandler|scheduleGuiOpen|()V
+      @|com\westclient\setup\GuiHandler.java|540|553|shouldOpenGui|field|com.westclient.setup.GuiHandler|shouldOpenGui
+   Method End: scheduleGuiOpen()V
+   Method Start: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\westclient\setup\GuiHandler.java|605|617|onClientTick|method|com.westclient.setup.GuiHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+      @|com\westclient\setup\GuiHandler.java|618|643|TickEvent.ClientTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+      @|com\westclient\setup\GuiHandler.java|644|649|event|param|com.westclient.setup.GuiHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com\westclient\setup\GuiHandler.java|665|670|event|param|com.westclient.setup.GuiHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V|event|0
+      @|com\westclient\setup\GuiHandler.java|671|676|phase|field|net.minecraftforge.fml.common.gameevent.TickEvent|phase
+      @|com\westclient\setup\GuiHandler.java|680|695|TickEvent.Phase|class|net.minecraftforge.fml.common.gameevent.TickEvent.Phase
+      @|com\westclient\setup\GuiHandler.java|696|699|END|field|net.minecraftforge.fml.common.gameevent.TickEvent.Phase|END
+      @|com\westclient\setup\GuiHandler.java|703|716|shouldOpenGui|field|com.westclient.setup.GuiHandler|shouldOpenGui
+      @|com\westclient\setup\GuiHandler.java|732|741|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\westclient\setup\GuiHandler.java|742|754|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\westclient\setup\GuiHandler.java|757|773|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\westclient\setup\GuiHandler.java|778|792|SetupGuiScreen|class|com.westclient.setup.ui.SetupGuiScreen
+      @|com\westclient\setup\GuiHandler.java|809|822|shouldOpenGui|field|com.westclient.setup.GuiHandler|shouldOpenGui
+   Method End: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V
+   Method Start: register()V
+      @|com\westclient\setup\GuiHandler.java|872|880|register|method|com.westclient.setup.GuiHandler|register|()V
+      @|com\westclient\setup\GuiHandler.java|893|907|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\westclient\setup\GuiHandler.java|908|917|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\westclient\setup\GuiHandler.java|918|926|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\westclient\setup\GuiHandler.java|931|941|GuiHandler|class|com.westclient.setup.GuiHandler
+   Method End: register()V
+Class End  : com.westclient.setup.GuiHandler
+endProcessing com\westclient\setup\GuiHandler.java
+
+processing com\westclient\setup\SetupCommand.java
+@|com\westclient\setup\SetupCommand.java|8|28|com.westclient.setup|package|com.westclient.setup|(file)
+Class Start: com.westclient.setup.SetupCommand
+   Method Start: getCommandName()Ljava/lang/String;
+      @|com\westclient\setup\SetupCommand.java|413|427|getCommandName|method|net.minecraft.command.ICommand|getCommandName|()Ljava/lang/String;
+      @|com\westclient\setup\SetupCommand.java|406|412|String|class|java.lang.String
+   Method End: getCommandName()Ljava/lang/String;
+   Method Start: getCommandAliases()Ljava/util/List;
+      @|com\westclient\setup\SetupCommand.java|498|515|getCommandAliases|method|net.minecraft.command.ICommand|getCommandAliases|()Ljava/util/List;
+      @|com\westclient\setup\SetupCommand.java|490|496|String|class|java.lang.String
+      @|com\westclient\setup\SetupCommand.java|485|489|List|class|java.util.List
+      @|com\westclient\setup\SetupCommand.java|535|541|Arrays|class|java.util.Arrays
+      @|com\westclient\setup\SetupCommand.java|542|548|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+   Method End: getCommandAliases()Ljava/util/List;
+   Method Start: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\westclient\setup\SetupCommand.java|603|618|getCommandUsage|method|net.minecraft.command.ICommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\westclient\setup\SetupCommand.java|596|602|String|class|java.lang.String
+      @|com\westclient\setup\SetupCommand.java|619|633|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\westclient\setup\SetupCommand.java|634|640|sender|param|com.westclient.setup.SetupCommand|getCommandUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|sender|0
+   Method End: getCommandUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\westclient\setup\SetupCommand.java|710|724|processCommand|method|net.minecraft.command.ICommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\westclient\setup\SetupCommand.java|725|739|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\westclient\setup\SetupCommand.java|740|746|sender|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com\westclient\setup\SetupCommand.java|748|754|String|class|java.lang.String
+      @|com\westclient\setup\SetupCommand.java|757|761|args|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|com\westclient\setup\SetupCommand.java|777|781|args|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|com\westclient\setup\SetupCommand.java|809|819|GuiHandler|class|com.westclient.setup.GuiHandler
+      @|com\westclient\setup\SetupCommand.java|820|835|scheduleGuiOpen|method|com.westclient.setup.GuiHandler|scheduleGuiOpen|()V
+      @|com\westclient\setup\SetupCommand.java|882|886|args|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      Field: Array Length, skipping
+      @|com\westclient\setup\SetupCommand.java|909|925|equalsIgnoreCase|method|java.lang.String|equalsIgnoreCase|(Ljava/lang/String;)Z
+      @|com\westclient\setup\SetupCommand.java|926|930|args|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|args|1
+      @|com\westclient\setup\SetupCommand.java|950|956|sender|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com\westclient\setup\SetupCommand.java|957|971|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|com\westclient\setup\SetupCommand.java|976|993|ChatComponentText|class|net.minecraft.util.ChatComponentText
+      @|com\westclient\setup\SetupCommand.java|1189|1195|sender|param|com.westclient.setup.SetupCommand|processCommand|(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sender|0
+      @|com\westclient\setup\SetupCommand.java|1196|1210|addChatMessage|method|net.minecraft.command.ICommandSender|addChatMessage|(Lnet/minecraft/util/IChatComponent;)V
+      @|com\westclient\setup\SetupCommand.java|1215|1232|ChatComponentText|class|net.minecraft.util.ChatComponentText
+   Method End: processCommand(Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+   Method Start: getRequiredPermissionLevel()I
+      @|com\westclient\setup\SetupCommand.java|1320|1346|getRequiredPermissionLevel|method|net.minecraft.command.CommandBase|getRequiredPermissionLevel|()I
+   Method End: getRequiredPermissionLevel()I
+Class End  : com.westclient.setup.SetupCommand
+endProcessing com\westclient\setup\SetupCommand.java
+
+processing com\westclient\setup\ui\SetupGuiScreen.java
+@|com\westclient\setup\ui\SetupGuiScreen.java|8|31|com.westclient.setup.ui|package|com.westclient.setup.ui|(file)
+Class Start: com.westclient.setup.ui.SetupGuiScreen
+   @|com\westclient\setup\ui\SetupGuiScreen.java|497|505|PANEL_BG|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BG|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|549|561|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|605|617|TEXT_PRIMARY|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_PRIMARY|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|661|671|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|715|724|TEXT_BASE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_BASE|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|768|779|TEXT_ACTIVE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_ACTIVE|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|818|831|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+   @|com\westclient\setup\ui\SetupGuiScreen.java|813|817|List|class|java.util.List
+   @|com\westclient\setup\ui\SetupGuiScreen.java|833|843|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|850|859|ArrayList|class|java.util.ArrayList
+   @|com\westclient\setup\ui\SetupGuiScreen.java|881|897|selectedCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedCategory|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|915|921|String|class|java.lang.String
+   @|com\westclient\setup\ui\SetupGuiScreen.java|922|941|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|966|978|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress|
+   @|com\westclient\setup\ui\SetupGuiScreen.java|1001|1013|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset|
+   Method Start: initGui()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1050|1057|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1070|1078|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1079|1097|enableRepeatEvents|method|org.lwjgl.input.Keyboard|enableRepeatEvents|(Z)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1113|1125|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1144|1154|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1155|1162|isEmpty|method|java.util.Collection|isEmpty|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1180|1194|initCategories|method|com.westclient.setup.ui.SetupGuiScreen|initCategories|()V
+   Method End: initGui()V
+   Method Start: onGuiClosed()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1245|1256|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1269|1277|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1278|1296|enableRepeatEvents|method|org.lwjgl.input.Keyboard|enableRepeatEvents|(Z)V
+   Method End: onGuiClosed()V
+   Method Start: initCategories()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1329|1343|initCategories|method|com.westclient.setup.ui.SetupGuiScreen|initCategories|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1356|1366|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1367|1370|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1375|1388|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1408|1418|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1419|1422|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1427|1440|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1458|1468|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1469|1472|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1477|1490|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1512|1522|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1523|1526|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1531|1544|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1572|1582|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1583|1586|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1591|1604|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1625|1635|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1636|1639|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1644|1657|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1679|1689|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1690|1693|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1698|1711|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1734|1744|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1745|1748|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1753|1766|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1787|1797|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1798|1801|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1806|1819|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1841|1851|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1852|1855|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1860|1873|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1894|1904|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1905|1908|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1913|1926|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1937|1943|Arrays|class|java.util.Arrays
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1944|1950|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+      @|com\westclient\setup\ui\SetupGuiScreen.java|1994|2004|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2005|2008|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2013|2026|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2053|2063|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2064|2067|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2072|2085|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2108|2118|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2119|2122|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2127|2140|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2161|2171|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2172|2175|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2180|2193|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2216|2226|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2227|2230|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2235|2248|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2259|2265|Arrays|class|java.util.Arrays
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2266|2272|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2293|2303|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2304|2307|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2312|2325|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2339|2345|Arrays|class|java.util.Arrays
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2346|2352|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2391|2401|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2402|2405|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2410|2423|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2442|2452|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2453|2456|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2461|2474|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2492|2502|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2503|2506|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2511|2524|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+   Method End: initCategories()V
+   Method Start: drawScreen(IIF)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2581|2591|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2596|2602|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2608|2614|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2622|2634|partialTicks|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|partialTicks|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2646|2658|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2661|2665|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2666|2669|min|method|java.lang.Math|min|(FF)F
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2674|2686|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2705|2722|drawCategoryPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawCategoryPanel|(II)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2723|2729|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2731|2737|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2748|2761|drawInfoPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawInfoPanel|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2779|2789|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2790|2796|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2798|2804|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2806|2818|partialTicks|param|com.westclient.setup.ui.SetupGuiScreen|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: drawCategoryPanel(II)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2845|2862|drawCategoryPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawCategoryPanel|(II)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2867|2873|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|drawCategoryPanel|(II)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|2879|2885|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|drawCategoryPanel|(II)V|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3052|3057|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3143|3149|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3183|3187|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3188|3191|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3216|3220|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3221|3224|max|method|java.lang.Math|max|(FF)F
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3232|3244|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3299|3305|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3335|3344|drawPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3395|3407|FontRenderer|class|net.minecraft.client.gui.FontRenderer
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3413|3428|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3438|3444|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3479|3489|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3524|3538|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3566|3576|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3891|3904|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3913|3923|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|3994|4002|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4012|4023|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4073|4081|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4082|4086|size|method|java.util.Collection|size|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4198|4202|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4203|4206|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4255|4267|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4270|4274|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4275|4278|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4282|4286|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4287|4290|min|method|java.lang.Math|min|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4291|4303|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4600|4603|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4604|4612|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4686|4689|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4690|4698|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4778|4781|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4782|4790|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4859|4862|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4863|4871|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4993|4996|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|4997|5005|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5049|5061|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5117|5129|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5173|5177|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5178|5181|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5429|5432|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5433|5441|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5515|5518|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5519|5527|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5629|5632|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5633|5641|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5721|5724|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5725|5733|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5856|5859|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|5860|5868|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6020|6023|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6024|6032|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6106|6109|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6110|6118|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6198|6201|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6202|6210|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6281|6284|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6285|6293|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6381|6384|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6385|6393|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6532|6544|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6610|6620|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6621|6625|size|method|java.util.Collection|size|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6648|6661|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6670|6680|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6681|6684|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6720|6739|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6740|6747|isEmpty|method|java.lang.String|isEmpty|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6753|6769|selectedCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6943|6957|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|6964|6968|name|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|name
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7039|7050|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7086|7094|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7122|7135|drawArrowDown|method|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7154|7164|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7220|7234|drawArrowRight|method|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7253|7263|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7322|7338|drawCenteredText|method|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7345|7349|name|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|name
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7397|7406|TEXT_BASE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_BASE
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7489|7497|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7507|7518|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7545|7551|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7566|7574|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7707|7723|selectedCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7738|7744|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7745|7764|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7791|7807|drawCenteredText|method|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|7864|7874|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED
+   Method End: drawCategoryPanel(II)V
+   Method Start: drawInfoPanel()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8004|8017|drawInfoPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawInfoPanel|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8185|8190|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8272|8278|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8312|8316|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8317|8320|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8345|8349|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8350|8353|max|method|java.lang.Math|max|(FF)F
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8361|8373|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8450|8456|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8486|8495|drawPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8546|8561|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8562|8572|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8614|8624|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8635|8641|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8659|8678|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8679|8686|isEmpty|method|java.lang.String|isEmpty|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8691|8701|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8702|8705|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8706|8722|selectedCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8724|8728|name|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|name
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8731|8750|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8760|8775|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8776|8786|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8834|8843|TEXT_BASE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_BASE
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8854|8869|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8870|8880|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8923|8934|TEXT_ACTIVE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_ACTIVE
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8945|8960|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|8961|8971|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9008|9017|TEXT_BASE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_BASE
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9028|9043|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9044|9059|drawSplitString|method|net.minecraft.client.gui.FontRenderer|drawSplitString|(Ljava/lang/String;IIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9268|9278|TEXT_MUTED|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_MUTED
+   Method End: drawInfoPanel()V
+   Method Start: drawPanel(IIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9314|9323|drawPanel|method|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9328|9329|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9335|9336|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9342|9343|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9349|9350|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9362|9365|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9366|9374|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9375|9376|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9382|9383|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9389|9390|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9393|9394|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9400|9401|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9404|9405|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9432|9435|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9436|9444|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9445|9446|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9448|9449|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9451|9452|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9455|9456|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9458|9459|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9462|9463|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9465|9473|PANEL_BG|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BG
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9484|9487|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9488|9496|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9497|9498|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9500|9501|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9503|9504|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9507|9508|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9510|9511|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9517|9529|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9540|9543|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9544|9552|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9553|9554|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9556|9557|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9560|9561|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9567|9568|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9571|9572|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9574|9575|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9578|9579|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9581|9593|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9604|9607|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9608|9616|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9617|9618|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9620|9621|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9623|9624|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9630|9631|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9634|9635|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9637|9649|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9660|9663|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9664|9672|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9673|9674|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9677|9678|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9684|9685|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9687|9688|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9691|9692|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9694|9695|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9698|9699|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9701|9713|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9795|9798|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9799|9807|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9808|9809|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9827|9828|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9846|9847|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9850|9851|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9869|9870|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9892|9904|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9915|9918|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9919|9927|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9928|9929|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9947|9948|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9951|9952|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9974|9975|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9978|9979|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|9997|9998|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10001|10002|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10020|10032|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10043|10046|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10047|10055|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10056|10057|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10075|10076|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10094|10095|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10117|10118|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10121|10122|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10140|10152|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10163|10166|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10167|10175|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10176|10177|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10180|10181|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10203|10204|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10222|10223|x|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|x|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10226|10227|w|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|w|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10245|10246|y|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10249|10250|h|param|com.westclient.setup.ui.SetupGuiScreen|drawPanel|(IIII)V|h|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10268|10280|PANEL_BORDER|field|com.westclient.setup.ui.SetupGuiScreen|PANEL_BORDER
+   Method End: drawPanel(IIII)V
+   Method Start: drawCenteredText(Ljava/lang/String;IIIZI)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10307|10323|drawCenteredText|method|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10324|10330|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10331|10335|text|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|text|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10341|10347|startX|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|startX|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10353|10367|availableWidth|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|availableWidth|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10373|10374|y|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|y|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10384|10390|active|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|active|4
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10396|10405|baseColor|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|baseColor|5
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10433|10448|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10449|10463|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10464|10468|text|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|text|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10487|10493|startX|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|startX|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10497|10511|availableWidth|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|availableWidth|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10550|10556|active|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|active|4
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10559|10570|TEXT_ACTIVE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_ACTIVE
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10573|10582|baseColor|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|baseColor|5
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10592|10607|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10608|10618|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10619|10623|text|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|text|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10628|10629|y|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|y|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10651|10657|active|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|active|4
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10673|10676|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10677|10685|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10689|10690|y|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|y|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10712|10713|y|param|com.westclient.setup.ui.SetupGuiScreen|drawCenteredText|(Ljava/lang/String;IIIZI)V|y|3
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10720|10731|TEXT_ACTIVE|field|com.westclient.setup.ui.SetupGuiScreen|TEXT_ACTIVE
+   Method End: drawCenteredText(Ljava/lang/String;IIIZI)V
+   Method Start: drawArrowDown(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10768|10781|drawArrowDown|method|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10786|10793|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10799|10800|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10806|10811|color|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|color|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10865|10868|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10869|10877|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10878|10885|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10895|10896|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10902|10909|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10919|10920|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10930|10935|color|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowDown|(III)V|color|2
+   Method End: drawArrowDown(III)V
+   Method Start: drawArrowRight(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10972|10986|drawArrowRight|method|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|10991|10998|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11004|11005|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11011|11016|color|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|color|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11028|11031|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11032|11040|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11041|11048|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11054|11055|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11061|11068|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11074|11075|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11081|11086|color|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|color|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11139|11142|Gui|class|net.minecraft.client.gui.Gui
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11143|11151|drawRect|method|net.minecraft.client.gui.Gui|drawRect|(IIIII)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11152|11159|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11169|11170|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11176|11183|centerX|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|centerX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11193|11194|y|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|y|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11204|11209|color|param|com.westclient.setup.ui.SetupGuiScreen|drawArrowRight|(III)V|color|2
+   Method End: drawArrowRight(III)V
+   Method Start: mouseClicked(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11262|11274|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11323|11334|IOException|class|java.io.IOException
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11279|11285|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11291|11297|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11303|11314|mouseButton|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseButton|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11351|11363|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11364|11370|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11372|11378|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11380|11391|mouseButton|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseButton|2
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11402|11421|handleCategoryClick|method|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11422|11428|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11430|11436|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|mouseClicked|(III)V|mouseY|1
+   Method End: mouseClicked(III)V
+   Method Start: handleCategoryClick(II)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11466|11485|handleCategoryClick|method|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11490|11496|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11502|11508|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11675|11680|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11766|11770|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11771|11774|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11787|11793|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11803|11807|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11808|11811|max|method|java.lang.Math|max|(FF)F
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11819|11831|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11886|11892|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11926|11932|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11945|11951|mouseX|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseX|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11977|11983|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|11996|12002|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12221|12233|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12299|12309|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12310|12314|size|method|java.util.Collection|size|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12337|12350|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12359|12369|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12370|12373|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12457|12463|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12475|12481|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12531|12542|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12637|12645|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12655|12663|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12759|12775|selectedCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|12801|12820|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13002|13010|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13020|13031|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13058|13064|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13077|13085|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13113|13119|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13131|13137|mouseY|param|com.westclient.setup.ui.SetupGuiScreen|handleCategoryClick|(II)Z|mouseY|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13185|13201|selectedCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedCategory
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13231|13250|selectedSubCategory|field|com.westclient.setup.ui.SetupGuiScreen|selectedSubCategory
+   Method End: handleCategoryClick(II)Z
+   Method Start: keyTyped(CI)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13460|13468|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13505|13516|IOException|class|java.io.IOException
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13474|13483|typedChar|param|com.westclient.setup.ui.SetupGuiScreen|keyTyped|(CI)V|typedChar|0
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13489|13496|keyCode|param|com.westclient.setup.ui.SetupGuiScreen|keyTyped|(CI)V|keyCode|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13531|13538|keyCode|param|com.westclient.setup.ui.SetupGuiScreen|keyTyped|(CI)V|keyCode|1
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13542|13550|Keyboard|class|org.lwjgl.input.Keyboard
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13551|13561|KEY_ESCAPE|field|org.lwjgl.input.Keyboard|KEY_ESCAPE
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13577|13579|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13580|13596|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13616|13618|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13619|13633|setIngameFocus|method|net.minecraft.client.Minecraft|setIngameFocus|()V
+   Method End: keyTyped(CI)V
+   Method Start: handleMouseInput()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13688|13704|handleMouseInput|method|net.minecraft.client.gui.GuiScreen|handleMouseInput|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13714|13725|IOException|class|java.io.IOException
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13742|13758|handleMouseInput|method|net.minecraft.client.gui.GuiScreen|handleMouseInput|()V
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13782|13803|org.lwjgl.input.Mouse|class|org.lwjgl.input.Mouse
+      @|com\westclient\setup\ui\SetupGuiScreen.java|13804|13818|getEventDWheel|method|org.lwjgl.input.Mouse|getEventDWheel|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14031|14036|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14130|14134|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14135|14138|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14151|14157|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14167|14171|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14172|14175|max|method|java.lang.Math|max|(FF)F
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14183|14195|openProgress|field|com.westclient.setup.ui.SetupGuiScreen|openProgress
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14258|14264|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14323|14344|org.lwjgl.input.Mouse|class|org.lwjgl.input.Mouse
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14345|14354|getEventX|method|org.lwjgl.input.Mouse|getEventX|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14359|14364|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14367|14369|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14370|14382|displayWidth|field|net.minecraft.client.Minecraft|displayWidth
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14409|14415|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14418|14439|org.lwjgl.input.Mouse|class|org.lwjgl.input.Mouse
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14440|14449|getEventY|method|org.lwjgl.input.Mouse|getEventY|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14454|14460|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14463|14465|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14466|14479|displayHeight|field|net.minecraft.client.Minecraft|displayHeight
+      @|com\westclient\setup\ui\SetupGuiScreen.java|14713|14725|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15038|15051|CategoryEntry|class|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15060|15070|categories|field|com.westclient.setup.ui.SetupGuiScreen|categories
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15157|15165|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15175|15186|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15244|15252|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15253|15257|size|method|java.util.Collection|size|()I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15362|15366|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15367|15370|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15427|15439|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15442|15446|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15447|15450|max|method|java.lang.Math|max|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15454|15458|Math|class|java.lang.Math
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15459|15462|min|method|java.lang.Math|min|(II)I
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15463|15475|scrollOffset|field|com.westclient.setup.ui.SetupGuiScreen|scrollOffset
+   Method End: handleMouseInput()V
+   Method Start: doesGuiPauseGame()Z
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15554|15570|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+   Class Start: com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15667|15673|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15674|15678|name|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|name|
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15707|15713|String|class|java.lang.String
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15702|15706|List|class|java.util.List
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15715|15723|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children|
+      @|com\westclient\setup\ui\SetupGuiScreen.java|15749|15757|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded|
+      Method Start: CategoryEntry(Ljava/lang/String;)V
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15776|15789|CategoryEntry|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;)V
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15790|15796|String|class|java.lang.String
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15797|15801|name|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;)V|name|0
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15822|15826|name|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;)V|name|0
+      Method End: CategoryEntry(Ljava/lang/String;)V
+      Method Start: CategoryEntry(Ljava/lang/String;Ljava/util/List;)V
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15862|15875|CategoryEntry|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;Ljava/util/List;)V
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15876|15882|String|class|java.lang.String
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15883|15887|name|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;Ljava/util/List;)V|name|0
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15894|15900|String|class|java.lang.String
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15889|15893|List|class|java.util.List
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15902|15910|children|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;Ljava/util/List;)V|children|1
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15931|15935|name|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|name
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15938|15942|name|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;Ljava/util/List;)V|name|0
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15961|15969|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15972|15980|children|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;Ljava/util/List;)V|children|1
+         @|com\westclient\setup\ui\SetupGuiScreen.java|15995|16004|ArrayList|class|java.util.ArrayList
+         @|com\westclient\setup\ui\SetupGuiScreen.java|16015|16024|ArrayList|class|java.util.ArrayList
+         @|com\westclient\setup\ui\SetupGuiScreen.java|16027|16035|children|param|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|CategoryEntry|(Ljava/lang/String;Ljava/util/List;)V|children|1
+         @|com\westclient\setup\ui\SetupGuiScreen.java|16055|16063|expanded|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|expanded
+      Method End: CategoryEntry(Ljava/lang/String;Ljava/util/List;)V
+      Method Start: hasChildren()Z
+         @|com\westclient\setup\ui\SetupGuiScreen.java|16108|16119|hasChildren|method|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|hasChildren|()Z
+         @|com\westclient\setup\ui\SetupGuiScreen.java|16144|16152|children|field|com.westclient.setup.ui.SetupGuiScreen.CategoryEntry|children
+         @|com\westclient\setup\ui\SetupGuiScreen.java|16153|16160|isEmpty|method|java.util.Collection|isEmpty|()Z
+      Method End: hasChildren()Z
+   Class End  : com.westclient.setup.ui.SetupGuiScreen.CategoryEntry
+Class End  : com.westclient.setup.ui.SetupGuiScreen
+endProcessing com\westclient\setup\ui\SetupGuiScreen.java
+

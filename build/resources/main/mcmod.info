@@ -1,0 +1,16 @@
+[
+{
+  "modid": "westclient",
+  "name": "WestClient",
+  "description": "Client base for the WestClient mod.",
+  "version": "1.0",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["WestClient Team"],
+  "credits": "WestClient Team",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
